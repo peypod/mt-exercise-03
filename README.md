@@ -1,4 +1,4 @@
-# MT Exercise 4: Layer Normalization for Transformer Models
+# MT Exercise 3: Layer Normalization for Transformer Models
 
 This repo is a collection of scripts showing how to install [JoeyNMT](https://github.com/joeynmt/joeynmt), download
 data and train & evaluate models, as well as the necessary data for training your own model
@@ -15,7 +15,7 @@ data and train & evaluate models, as well as the necessary data for training you
 
 Clone this repository or your fork thereof in the desired place:
 
-    git clone https://github.com/marpng/mt-exercise-4
+    git clone https://github.com/marpng/mt-exercise-03
 
 Create a new virtualenv that uses Python 3. Please make sure to run this command outside of any virtual Python environment:
 
