@@ -11,11 +11,11 @@ data and train & evaluate models, as well as the necessary data for training you
 
     `pip install virtualenv`
 
-# Steps
+# Steps for macOS & Linux users
 
 Clone this repository or your fork thereof in the desired place:
 
-    git clone https://github.com/moritz-steiner/mt-exercise-4
+    git clone https://github.com/marpng/mt-exercise-4
 
 Create a new virtualenv that uses Python 3. Please make sure to run this command outside of any virtual Python environment:
 
@@ -35,3 +35,34 @@ Train a model:
     ./scripts/train.sh
 
 The training process can be interrupted at any time, and the best checkpoint will always be saved. It is also possible to continue training from there later on.
+
+# Steps for Windows users
+
+This repo relies on Bash scripts (.sh files), which do not run natively on Windows (CMD or PowerShell).  
+Here are two ways to make it work:
+
+Option 1: Use WSL (Windows Subsystem for Linux)
+Enable WSL and install Ubuntu: `wsl --install`
+
+Open Ubuntu from your Start menu.
+
+Inside the Ubuntu terminal, follow the exact same steps as shown above for macOS/Linux:
+```
+git clone https://github.com/marpng/mt-exercise-4
+cd mt-exercise-4
+./scripts/make_virtualenv.sh
+./scripts/download_install_packages.sh
+./scripts/train.sh
+```     
+
+Option 2: Manually run steps without shell scripts
+If you can't use WSL, you can recreate the process manually using PowerShell or CMD
+Create and activate a virtual environment:
+```
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+```
+Manually download and install Moses and other dependencies (you'll need to look inside scripts/download_install_packages.sh to replicate its steps).
+
+Run the training logic by manually executing the code inside train.sh, or porting it to a Python script or notebook.
