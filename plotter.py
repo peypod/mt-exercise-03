@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 
 log_files = {
     "Baseline": "logs/baseline.log",
-    "Prenorm": "logs/deen_transformer_prenorm.log",
-    "Postnorm": "logs/deen_transformer_postnorm.log"
+    "Prenorm": "models/deen_transformer_pre/train.log",
+    "Postnorm": "models/deen_transformer_post/train.log"
 }
 csv_path = "ppl_table.csv"
 
