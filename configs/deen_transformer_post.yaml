@@ -37,7 +37,7 @@ testing:
     beam_alpha: 1.0
 
 training:
-    #load_model: "your/path.ckpt"
+    load_model: "your/path.ckpt"
     random_seed: 42
     optimizer: "adam"
     normalization: "tokens"
