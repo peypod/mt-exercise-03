@@ -62,6 +62,7 @@ training:
     max_output_length: 100
     print_valid_sents: [0, 1, 2, 3, 4]
     label_smoothing: 0.3
+    layer_norm: "post"
 
 model:
     initializer: "xavier_uniform"
@@ -82,6 +83,7 @@ model:
         hidden_size: 256
         ff_size: 512
         dropout: 0
+        layer_norm: "post"
     decoder:
         type: "transformer"
         num_layers: 1
@@ -93,3 +95,4 @@ model:
         hidden_size: 256
         ff_size: 512
         dropout: 0
+        layer_norm: "post"
